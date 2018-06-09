@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Count Words Online</title>
+</head>
+<body>
+	<main>
+		<section class="intro">
+			<h1>Word Count</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ea excepturi voluptas vel sapiente maxime fugiat est tempore at error natus, voluptatum neque aspernatur? Ex ad magni error! Officiis, harum?</p>
+		</section>
+
+		<section class="count-box">
+			<div class="input">
+				<textarea id="textareaInput" placeholder="Paste your text here..."></textarea>
+				<button id="countWords">Count!</button>
+			</div>
+			<div class="results" style="display: none">
+				<ul>
+					<li> <strong>Amount of words: </strong>	<span class="word-count"></span> </li>
+					<li> <strong>Amount of characters: </strong> <span class="char-count"></span> </li>
+					<li> <strong>Amount of characters without spaces: </strong> <span class="char-stripped-count"></span> </li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="javascript/script.js"></script>
+</body>
+</html>
