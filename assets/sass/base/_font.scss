@@ -1,7 +1,18 @@
 
-h1, h3 {
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+
+$Dosis: 'Dosis', sans-serif;
+$heading-font: $Dosis;
+$body-font: $Dosis;
+
+h1,
+h2,
+h3,
+h4 {
 	padding: 0;
 	margin: 0;
+	font-family: $heading-font;
+	font-weight: 700;
 }
 
 h1 {
@@ -12,6 +23,8 @@ h1 {
 p {
 	font-size: 18px;
 	margin-bottom: 10px;
+	font-family: $body-font;
+	font-weight: 400;
 
 	&:last-child {
 		margin-bottom: 0;

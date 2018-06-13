@@ -21,9 +21,10 @@ section {
 				textarea {
 					width: 100%;
 					min-height: 250px;
+					margin-bottom: 20px;
 				}
 				button {
-					background: #cccccc; // other color!
+					background: sandybrown; // other color!
 					color: $text-white;
 					width: 100%;
 					height: 40px;
@@ -32,9 +33,34 @@ section {
 
 					&:hover,
 					&:focus {
-						background: darken(#cccccc, 10);
+						background: darken(sandybrown, 10);
 					}
 				}
+			}
+		}
+	}
+}
+
+div.results {
+	background: #eeeeee;
+	padding: 20px;
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-position: inside;
+			list-style-type: square;
+			line-height: 1.75em;
+			letter-spacing: 1px;
+
+			span.info {
+				width: 60%;
+				display: inline-block;
+			}
+			span.count {
+				font-weight: 700;
 			}
 		}
 	}

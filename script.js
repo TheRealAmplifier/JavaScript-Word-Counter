@@ -26,13 +26,14 @@ $(function() {
 			wordCountSpan.textContent = totalWordCount;
 			characterCountSpan.textContent = totalCharacterCount;
 			characterStrippedCountSpan.textContent = totalStrippedCharacterCount;
+		} else {
+			resultDiv.style.display = 'block';
+			resultDiv.innerHTML = 'I cannot count nothing... <br /> Please paste in some nice text before submitting the form!';
 		}
 	}
 
 	document.getElementById('countWords').addEventListener('click', function(event) {
 		event.preventDefault();
-
 		countWords();
 	});
-
 });

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
 body {
   margin: 0;
   padding: 0;
@@ -22,9 +23,14 @@ button {
   background-color: transparent;
 }
 
-h1, h3 {
+h1,
+h2,
+h3,
+h4 {
   padding: 0;
   margin: 0;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -35,9 +41,15 @@ h1 {
 p {
   font-size: 18px;
   margin-bottom: 10px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
 }
 p:last-child {
   margin-bottom: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
 }
 
 main {
@@ -62,9 +74,10 @@ section#search-wrapper div.intro {
 section#search-wrapper div.count-box textarea {
   width: 100%;
   min-height: 250px;
+  margin-bottom: 20px;
 }
 section#search-wrapper div.count-box button {
-  background: #cccccc;
+  background: sandybrown;
   color: #ffffff;
   width: 100%;
   height: 40px;
@@ -72,7 +85,29 @@ section#search-wrapper div.count-box button {
   text-align: center;
 }
 section#search-wrapper div.count-box button:hover, section#search-wrapper div.count-box button:focus {
-  background: #b3b3b3;
+  background: #f18930;
+}
+
+div.results {
+  background: #eeeeee;
+  padding: 20px;
+}
+div.results ul {
+  padding: 0;
+  margin: 0;
+}
+div.results ul li {
+  list-style-position: inside;
+  list-style-type: square;
+  line-height: 1.75em;
+  letter-spacing: 1px;
+}
+div.results ul li span.info {
+  width: 60%;
+  display: inline-block;
+}
+div.results ul li span.count {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
